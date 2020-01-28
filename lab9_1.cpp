@@ -20,16 +20,20 @@ int main(){
 		}else if( grade == "D" ) {
 			count[3]++;
 			count[5]++;
-		}else if( grade == "E" ) {
+		}else if( grade == "F" ) {
 			count[4]++;
 			count[5]++;
-		}else{
-			cout << "Wrong input. Please input again.";
-		} 
-	}while( grade != "0");
+		}
+    else if( grade == "0" ) {
+      break;
+		}
+    else{
+			cout << "Wrong input. Please input again." << endl ;
+		}
+	}while( true );
 	
 	
-	cout << "In total" << count[5] << "students.";
+	cout << "In total " << count[5] << " students."<< endl;
 	cout << "A = " << count[0] <<",";
 	cout << "B = " << count[1] <<",";	
 	cout << "C = " << count[2] <<",";
