@@ -2,9 +2,9 @@
 using namespace std;
 
 int main(){
-	int count[5] = {}; //Declare array count for counting A,B,C,D,F and initialize all element = 0
+	int count[6] = {}; //Declare array count for counting A,B,C,D,F and initialize all element = 0
 	string grade;
-	cout << "Please input grade of each student (A-F) or input 0 to exit.";
+	cout << "Please input grade of each student (A-F) or input 0 to exit." << endl;
 	do{
 		cout << "Student [" << count[5] +1 << "]:";
 		cin >> grade; //The loop must be terminated when grade = '0'
